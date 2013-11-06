@@ -34,12 +34,12 @@ catkin_python_setup()
 # )
 
 ## Generate added messages and services with any dependencies listed here
-generate_messages(
-  DEPENDENCIES
-  geometry_msgs
-  sensor_msgs
-  std_msgs
-)
+#generate_messages(
+#  DEPENDENCIES
+#  geometry_msgs
+#  sensor_msgs
+#  std_msgs
+#)
 
 ###################################
 ## catkin specific configuration ##
@@ -94,6 +94,8 @@ include_directories(include
 ## in contrast to setup.py, you can choose the destination
 install(PROGRAMS
   src/valve_localization/valve_localizer.py
+  src/valve_localization/valve_localizer_gripper.py
+  src/valve_localization/valve_localizer_gripper_no_planner.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

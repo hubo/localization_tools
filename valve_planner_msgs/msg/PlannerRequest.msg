@@ -2,6 +2,13 @@ std_msgs/Header header
 geometry_msgs/PoseStamped ValvePose
 float64 ValveSize
 string ValveType
+string EndEffector
 string Hands
 string Direction
 string TaskStage
+bool useLeft
+bool useRight
+geometry_msgs/PoseStamped LeftPose
+geometry_msgs/PoseStamped RightPose
+float64 LeftLength
+float64 RightLength
